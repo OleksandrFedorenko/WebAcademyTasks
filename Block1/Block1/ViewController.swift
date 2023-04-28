@@ -17,11 +17,10 @@ class ViewController: UIViewController {
         //task4()
         //task5()
         //task6_7()
-        //task8()!!!!!!!!!!!!!!!!!!!!!!!!
+        //task8()
         //task9()
         //task10()
-        print(task11(charg: 15))
-        
+        //print(task11(charg: 15))
     }
     
     /* Task 1
@@ -90,7 +89,6 @@ class ViewController: UIViewController {
      Создайте пустой словарь calendar, так же вам понадобиться массив с месяцами из четвертого задания.
      С помощью цикла от 1970 до 2022 задайте значения для словаря. В качестве ключа пусть будет год, а значение это массив с месяцами.
      С помощью другого цикла добавьте в calendar на каждый год по одному месяцу с вашим названием, чтобы в каждом году вышло 13 месяцев.*/
-    
     func task6_7() -> [Int: [String]]{
         var calendar:[Int: [String]] = [:]
         let arr: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"]
@@ -100,7 +98,7 @@ class ViewController: UIViewController {
         for i in calendar{
             calendar[i.key]?.append("YOBANA_rusNYA")
         }
-        print(calendar)
+//        print(calendar)
         return calendar
     }
     
@@ -117,17 +115,34 @@ class ViewController: UIViewController {
         let arr2 = task6_7()
         var calendarPro:[Int:[String:[Int]]] = [:]
 
+        var dict:[String: [Int]] = [:]
         for i in 1...31{
-           arr.append(i)
+            arr.append(i)
         }
-
-//        print(arr2)
-//        print(arr)
-        //for i in arr{
-            
-        
-        //}
-        //next will be tomorrow
+        for i in arr2{
+            for k in i.value{
+                dict[k] = arr
+            }
+            calendarPro[i.key] = dict
+            dict.removeAll()
+        }
+        print("\(String(describing: calendarPro[2019]!["September"]![0])) \(getMonth(calendarPro[2019]!)) \(getYear(calendarPro))")
+    }
+       
+    func getMonth(_ arr: [String: [Int]]) -> String {
+        var month = ""
+        for i in arr.keys where i == "September"{
+            month = i
+        }
+        return month
+    }
+              
+    func getYear(_ arr: [Int:[String:[Int]]] ) -> Int {
+        var year = 0
+        for i in arr.keys where i == 2019{
+            year = i
+        }
+        return year
     }
     
     /* Task 9
@@ -151,7 +166,6 @@ class ViewController: UIViewController {
      Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака).
      В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
      Задание сложнее чем кажется :)*/
-    
     func task10() {
         let str = "yobana rusnya blyat!"
         let arr = str.components(separatedBy: " ")
@@ -166,7 +180,6 @@ class ViewController: UIViewController {
      ● если 20-40%, “Поставьте устройство на зарядку”
      ● если 0%, “Устройство полностью разряжено”
      В остальных случаях не выводите ничего. Используйте switch case.*/
-    
     func task11(charg: Int) -> String {
         switch charg {
         case 100:
