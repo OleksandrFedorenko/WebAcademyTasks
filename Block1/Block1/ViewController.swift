@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //task1()
-        //task2()
-        //task3()
+//        task1()
+//        task2()
+    task3()
         //task4()
         //task5()
         //task6_7()
@@ -27,23 +27,46 @@ class ViewController: UIViewController {
      Создайте массив с десятью случайными числами, из которых пять меньше нуля и пять больше нуля.
      Замените все отрицательные числа на 0 и выведите массив в консоль*/
     func task1() {
-        var arr: [Int] = [1, 2, 3, 4, 5, -1, -2, -3, -4, -5]
-        var i = 0
-        
-        while i < arr.count {
-            if arr[i] < 0{
-                arr[i] = 0
+        var arr: [Int] = generateArr(positiveNum: 5, negativeNum: 5)
+        var arrWithZeroes: [Int] = []
+//         arrWithZeroes = arr.map{(number) -> Int in
+//            if(number < 0){
+//                return 0
+//            }
+//            return number
+//        }
+        arrWithZeroes = arr.map({
+            if($0 < 0){
+                return 0
             }
-            i += 1
+            return $0
+        })
+//  ******Using loop while*******
+//        while i < arr.count {
+//            if arr[i] < 0{
+//                arr[i] = 0
+//            }
+//            i += 1
+//        }
+        print(arrWithZeroes)
+    }
+    
+    func generateArr(positiveNum: Int, negativeNum: Int) -> [Int] {
+        var arr: [Int] = []
+        for _ in 1...positiveNum{
+            arr.append(Int.random(in: 1...Int.max))
         }
-        print(arr)
+        for _ in 1...negativeNum{
+            arr.append(Int.random(in: Int.min...1))
+        }
+        return arr.shuffled()
     }
     
     /* Task 2
      Создайте массив с десятью случайными числами, из которых пять меньше нуля и пять больше нуля.
      Найдите минимальный и максимальный элемент в массиве и выведите его в консоль*/
     func task2() {
-        let arr: [Int] = [1, 2, 3, 4, 5, -1, -2, -3, -4, -5]
+        let arr: [Int] = generateArr(positiveNum: 5, negativeNum: 5)
         print("Min - \(arr.min()!), Max - \(arr.max()!)")
     }
     
@@ -51,13 +74,14 @@ class ViewController: UIViewController {
      Создайте массив с десятью случайными числами, из которых пять меньше нуля и пять больше нуля.
      Найдите сумму элементов массива чисел и выведите ее в консоль*/
     func task3() {
-        let arr: [Int] = [1, 2, 3, 4, 5, -1, -2, -3, -4, -5, 2]
-        var sum = 0
-        
-        for i in arr{
-            sum += i
-        }
-        print(sum)
+        let arr: [Int] = [1, 2, 3 ,4 , -2]
+        let total = arr.reduce(0,+)
+
+//        var sum = 0
+//        for i in arr{
+//            sum += i
+//        }
+        print(total)
     }
     
     /* Task 4
@@ -98,7 +122,7 @@ class ViewController: UIViewController {
         for i in calendar{
             calendar[i.key]?.append("YOBANA_rusNYA")
         }
-//        print(calendar)
+        print(calendar)
         return calendar
     }
     
@@ -147,7 +171,6 @@ class ViewController: UIViewController {
     
     /* Task 9
      Создайте 2 переменные с числами. Если значения равны, выведите в консоль их сумму умноженную на 3, если нет, выведите в консоль их сумму в случае если она четное число.*/
-    
     func task9() {
         let a = 2
         let b = 4
@@ -160,8 +183,7 @@ class ViewController: UIViewController {
             print("The numbers do not satisfy the condition!")
         }
     }
-    
-    
+
     /* Task 10
      Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака).
      В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
@@ -190,7 +212,6 @@ class ViewController: UIViewController {
             return "Put the device on charge"
         case 0:
             return "The device is dead"
-            
         default:
             return ""
         }
