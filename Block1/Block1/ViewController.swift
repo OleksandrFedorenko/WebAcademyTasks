@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        task1()
 //        task2()
-    task3()
+//        task3()
         //task4()
         //task5()
         //task6_7()
@@ -21,8 +21,16 @@ class ViewController: UIViewController {
         //task9()
         //task10()
         //print(task11(charg: 15))
+//    print(countO(in: "hello WorldO", "o"))
+        
+
     }
-    
+    func countO(in text: String, _ symbol: Character) -> Int {
+        let count: Int = Array(text).reduce(0) {
+            return $1 == symbol.lowercased().first || $1 == symbol.uppercased().first ? $0 + 1 : $0
+        }
+        return count
+    }
     /* Task 1
      Создайте массив с десятью случайными числами, из которых пять меньше нуля и пять больше нуля.
      Замените все отрицательные числа на 0 и выведите массив в консоль*/
@@ -76,11 +84,6 @@ class ViewController: UIViewController {
     func task3() {
         let arr: [Int] = [1, 2, 3 ,4 , -2]
         let total = arr.reduce(0,+)
-
-//        var sum = 0
-//        for i in arr{
-//            sum += i
-//        }
         print(total)
     }
     
@@ -114,15 +117,21 @@ class ViewController: UIViewController {
      С помощью цикла от 1970 до 2022 задайте значения для словаря. В качестве ключа пусть будет год, а значение это массив с месяцами.
      С помощью другого цикла добавьте в calendar на каждый год по одному месяцу с вашим названием, чтобы в каждом году вышло 13 месяцев.*/
     func task6_7() -> [Int: [String]]{
-        var calendar:[Int: [String]] = [:]
+    
         let arr: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"]
-        for i in 1970...2022{
-            calendar[i] = arr
-        }
-        for i in calendar{
-            calendar[i.key]?.append("YOBANA_rusNYA")
-        }
-        print(calendar)
+        let calendar = arr.reduce(into: [:]) { partialResult, value in
+            partialResult[value ]
+        })
+        
+        
+        
+//        for i in 1970...2022{
+//            calendar[i] = arr
+//        }
+//        for i in calendar{
+//            calendar[i.key]?.append("YOBANA_rusNYA")
+//        }
+//        print(calendar)
         return calendar
     }
     
@@ -216,5 +225,9 @@ class ViewController: UIViewController {
             return ""
         }
     }
+    
+    let str = "Hello World"
+    
+  
 }
 
