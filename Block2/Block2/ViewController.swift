@@ -15,12 +15,10 @@ class ViewController: UIViewController {
         print("************* Task 1 *************")
         let sailor = Sailor(name: "Alex")
         sailor.introduceMyself()
-//        print("**********************************")
         
         print("************* Task 2 *************")
         let ship = Ship(shipName: "Black parley", sailorArray: [sailor])
         ship.intoduceAll()
-//        print("**********************************")
         
         print("************* Task 3 *************")
         let sailor1 = Sailor(name: "Alex1")

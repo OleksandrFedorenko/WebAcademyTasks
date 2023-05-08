@@ -17,6 +17,7 @@
 		40AE71F32A08DF4E003001E5 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71F22A08DF4E003001E5 /* CalculatorBrain.swift */; };
 		40AE71F52A09059E003001E5 /* WildWest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71F42A09059E003001E5 /* WildWest.swift */; };
 		40AE71F72A091EE7003001E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71F62A091EE7003001E5 /* Extensions.swift */; };
+		40AE71FB2A095A56003001E5 /* GeometricShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71FA2A095A56003001E5 /* GeometricShapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		40AE71F22A08DF4E003001E5 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		40AE71F42A09059E003001E5 /* WildWest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildWest.swift; sourceTree = "<group>"; };
 		40AE71F62A091EE7003001E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		40AE71FA2A095A56003001E5 /* GeometricShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricShapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,9 @@
 			children = (
 				40AE71DB2A04F895003001E5 /* AppDelegate.swift */,
 				40AE71DD2A04F895003001E5 /* SceneDelegate.swift */,
+				40AE71F82A094478003001E5 /* MyGame */,
 				40AE71DF2A04F895003001E5 /* ViewController.swift */,
+				40AE71F92A095A18003001E5 /* Additional tasks */,
 				40AE71EF2A08D593003001E5 /* Classes */,
 				40AE71E12A04F895003001E5 /* Main.storyboard */,
 				40AE71E42A04F896003001E5 /* Assets.xcassets */,
@@ -85,6 +89,21 @@
 				40AE71F62A091EE7003001E5 /* Extensions.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		40AE71F82A094478003001E5 /* MyGame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyGame;
+			sourceTree = "<group>";
+		};
+		40AE71F92A095A18003001E5 /* Additional tasks */ = {
+			isa = PBXGroup;
+			children = (
+				40AE71FA2A095A56003001E5 /* GeometricShapes.swift */,
+			);
+			path = "Additional tasks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +180,7 @@
 				40AE71F52A09059E003001E5 /* WildWest.swift in Sources */,
 				40AE71E02A04F895003001E5 /* ViewController.swift in Sources */,
 				40AE71DC2A04F895003001E5 /* AppDelegate.swift in Sources */,
+				40AE71FB2A095A56003001E5 /* GeometricShapes.swift in Sources */,
 				40AE71DE2A04F895003001E5 /* SceneDelegate.swift in Sources */,
 				40AE71F32A08DF4E003001E5 /* CalculatorBrain.swift in Sources */,
 				40AE71F12A08D61E003001E5 /* Navy.swift in Sources */,
