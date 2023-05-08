@@ -69,6 +69,14 @@ class ViewController: UIViewController {
 
         tavern.enterTavern(hero: bob)
         tavern.enterTavern(hero: jack)
+        
+        print("************* Task 12 *************")
+        let i = 2
+        print(i.numberToPow(to: 2))
+        let str = "А винагорода – та дорога, нива"
+        print(str.isPalindrome())
+        
+
     }
 }
 
