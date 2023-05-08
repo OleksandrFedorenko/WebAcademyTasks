@@ -58,10 +58,17 @@ class ViewController: UIViewController {
         let totalAmount = principalAmount + superProCalc.calculateCompoundInterest(principal: principalAmount, rate: interestRate, time: timePeriod)
         print(totalAmount)
 
-        print("************* Task 6 *************")
-        
+        print("************* Task 10 *************")
+        let john = Farmer()
+        let alice = Waitress()
+        let andy = Butcher()
+        let johan = Drunkard()
+        let bob = Cowboy1(name: "Bob")
+        let jack = Cowboy(name: "Jack")
+        let tavern = Tavern(fighters: [andy, johan ], movers: [john, alice])
 
-
+        tavern.enterTavern(hero: bob)
+        tavern.enterTavern(hero: jack)
     }
 }
 

@@ -37,6 +37,8 @@ class CalculatorPro: Calculator {
         return Int(pow(number, exponent))
     }
 }
+
+// MARK: - TASK 6
 class SuperProCalc: CalculatorPro {
 
     func calculateCompoundInterest(principal: Double, rate: Double, time: Double) -> Double{
