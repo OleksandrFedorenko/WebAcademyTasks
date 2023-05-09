@@ -18,6 +18,7 @@
 		40AE71F52A09059E003001E5 /* WildWest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71F42A09059E003001E5 /* WildWest.swift */; };
 		40AE71F72A091EE7003001E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71F62A091EE7003001E5 /* Extensions.swift */; };
 		40AE71FB2A095A56003001E5 /* GeometricShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71FA2A095A56003001E5 /* GeometricShapes.swift */; };
+		40AE71FD2A0A32B0003001E5 /* GeometricShapesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE71FC2A0A32B0003001E5 /* GeometricShapesEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		40AE71F42A09059E003001E5 /* WildWest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildWest.swift; sourceTree = "<group>"; };
 		40AE71F62A091EE7003001E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		40AE71FA2A095A56003001E5 /* GeometricShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricShapes.swift; sourceTree = "<group>"; };
+		40AE71FC2A0A32B0003001E5 /* GeometricShapesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricShapesEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				40AE71FA2A095A56003001E5 /* GeometricShapes.swift */,
+				40AE71FC2A0A32B0003001E5 /* GeometricShapesEnum.swift */,
 			);
 			path = "Additional tasks";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				40AE71F52A09059E003001E5 /* WildWest.swift in Sources */,
 				40AE71E02A04F895003001E5 /* ViewController.swift in Sources */,
+				40AE71FD2A0A32B0003001E5 /* GeometricShapesEnum.swift in Sources */,
 				40AE71DC2A04F895003001E5 /* AppDelegate.swift in Sources */,
 				40AE71FB2A095A56003001E5 /* GeometricShapes.swift in Sources */,
 				40AE71DE2A04F895003001E5 /* SceneDelegate.swift in Sources */,

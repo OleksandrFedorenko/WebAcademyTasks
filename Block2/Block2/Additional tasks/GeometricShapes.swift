@@ -35,7 +35,7 @@ struct Triangular: GeometricFormulas {
     var height: Double
     var sideA: Double
     var sideB: Double
-    
+
     func countArea() -> Double{
         return 0.5 * base * height
     }
@@ -46,7 +46,7 @@ struct Triangular: GeometricFormulas {
 }
 
 struct Circle: GeometricFormulas {
-    
+
     var radius: Double
     let π = Double.pi
 
@@ -58,6 +58,4 @@ struct Circle: GeometricFormulas {
         return 2 * π * radius
     }
 }
-
-
 
