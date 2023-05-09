@@ -18,12 +18,11 @@ class ViewController: UIViewController {
         //task5()
 //        task6()
         //task7()
-        task8()
+ //       task8()
         //task9()
         //task10()
         //print(task11(charg: 15))
 //    print(countO(in: "hello WorldO", "o"))
-        
 
     }
     func countO(in text: String, _ symbol: Character) -> Int {
@@ -36,27 +35,16 @@ class ViewController: UIViewController {
      Создайте массив с десятью случайными числами, из которых пять меньше нуля и пять больше нуля.
      Замените все отрицательные числа на 0 и выведите массив в консоль*/
     func task1() {
+
         var arr: [Int] = generateArr(positiveNum: 5, negativeNum: 5)
         var arrWithZeroes: [Int] = []
-//         arrWithZeroes = arr.map{(number) -> Int in
-//            if(number < 0){
-//                return 0
-//            }
-//            return number
-//        }
+
         arrWithZeroes = arr.map({
             if($0 < 0){
                 return 0
             }
             return $0
         })
-//  ******Using loop while*******
-//        while i < arr.count {
-//            if arr[i] < 0{
-//                arr[i] = 0
-//            }
-//            i += 1
-//        }
         print(arrWithZeroes)
     }
     
@@ -100,14 +88,16 @@ class ViewController: UIViewController {
         }
         print(dict)
     }
-    
+
     /* Task 5
      Создайте словарь:
      var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
      Поменяйте местами значения по ключам “first” и “fourth”. Выведите в консоль итоговый словарь*/
     func task5() {
+
         var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
         let first = dictionary.first?.value
+
         dictionary["first"] = dictionary["fourth"]
         dictionary["fourth"] = first
         print(dictionary)
@@ -128,12 +118,11 @@ class ViewController: UIViewController {
     }
       
     func task7() -> [Int:[String]]{
-
         let arr = task6()
         let monthToAdd = "Test"
 
         return arr.reduce(into: [:]) { partialResult, dictToAdd in
-            var (key, value) = dictToAdd
+            let (key, value) = dictToAdd
             partialResult[key] = value + [monthToAdd]
         }
     }
@@ -152,15 +141,14 @@ class ViewController: UIViewController {
         var calendarPro:[Int:[String:[Int]]] = [:]
 
         calendarPro = calendar.reduce(into: [:]) { partialResult, value in
-    
             let(year, arrMonths) = value
             let tmpArr = arrMonths.reduce(into: [:]) { partialResult, month in
                 partialResult[month] = dayArr
             }
             partialResult[year] = tmpArr
         }
-        print(calendarPro)
-        //print("\(String(describing: calendarPro[2019]!["September"]![0])) \(getMonth(calendarPro[2019]!)) \(getYear(calendarPro))")
+
+        print("\(String(describing: calendarPro[2019]!["September"]![0])) \(getMonth(calendarPro[2019]!)) \(getYear(calendarPro))")
     }
        
     func getMonth(_ arr: [String: [Int]]) -> String {
@@ -170,7 +158,7 @@ class ViewController: UIViewController {
         }
         return month
     }
-              
+
     func getYear(_ arr: [Int:[String:[Int]]] ) -> Int {
         var year = 0
         for i in arr.keys where i == 2019{
