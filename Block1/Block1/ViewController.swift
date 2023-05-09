@@ -16,8 +16,9 @@ class ViewController: UIViewController {
 //        task3()
         //task4()
         //task5()
-        //task6_7()
-        //task8()
+//        task6()
+        //task7()
+        task8()
         //task9()
         //task10()
         //print(task11(charg: 15))
@@ -116,25 +117,27 @@ class ViewController: UIViewController {
      Создайте пустой словарь calendar, так же вам понадобиться массив с месяцами из четвертого задания.
      С помощью цикла от 1970 до 2022 задайте значения для словаря. В качестве ключа пусть будет год, а значение это массив с месяцами.
      С помощью другого цикла добавьте в calendar на каждый год по одному месяцу с вашим названием, чтобы в каждом году вышло 13 месяцев.*/
-    func task6_7() -> [Int: [String]]{
-    
+    func task6() -> [Int:[String]]{
+        
         let arr: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"]
-        let calendar = arr.reduce(into: [:]) { partialResult, value in
-            partialResult[value ]
-        })
-        
-        
-        
-//        for i in 1970...2022{
-//            calendar[i] = arr
-//        }
-//        for i in calendar{
-//            calendar[i.key]?.append("YOBANA_rusNYA")
-//        }
-//        print(calendar)
-        return calendar
+        let arrYears: [Int] = Array(1...4)
+
+        return arrYears.reduce(into: [:]) { partialResult, value in
+            partialResult[value] = arr
+        }
     }
-    
+      
+    func task7() -> [Int:[String]]{
+
+        let arr = task6()
+        let monthToAdd = "Test"
+
+        return arr.reduce(into: [:]) { partialResult, dictToAdd in
+            var (key, value) = dictToAdd
+            partialResult[key] = value + [monthToAdd]
+        }
+    }
+
     /* Task 8
      На основании словаря, который у вас получился в седьмом задании, давайте создадим новый словарь, который будет включать в себя также и даты, a именно массив с числами от 1 до 31:
      ● Создайте массив с числами от 1 до 31 с помощью цикла.
@@ -144,22 +147,20 @@ class ViewController: UIViewController {
      ● Выведите в консоль 1 сентября 2019 года.
      PS: Для заполнения calendarPro используйте только созданный массив с числами, и словарь с месяцами, и никаких других данных*/
     func task8() {
-        var arr:[Int] = []
-        let arr2 = task6_7()
+        let dayArr:[Int] = Array(1...31)
+        let calendar = task7()
         var calendarPro:[Int:[String:[Int]]] = [:]
 
-        var dict:[String: [Int]] = [:]
-        for i in 1...31{
-            arr.append(i)
-        }
-        for i in arr2{
-            for k in i.value{
-                dict[k] = arr
+        calendarPro = calendar.reduce(into: [:]) { partialResult, value in
+    
+            let(year, arrMonths) = value
+            let tmpArr = arrMonths.reduce(into: [:]) { partialResult, month in
+                partialResult[month] = dayArr
             }
-            calendarPro[i.key] = dict
-            dict.removeAll()
+            partialResult[year] = tmpArr
         }
-        print("\(String(describing: calendarPro[2019]!["September"]![0])) \(getMonth(calendarPro[2019]!)) \(getYear(calendarPro))")
+        print(calendarPro)
+        //print("\(String(describing: calendarPro[2019]!["September"]![0])) \(getMonth(calendarPro[2019]!)) \(getYear(calendarPro))")
     }
        
     func getMonth(_ arr: [String: [Int]]) -> String {
