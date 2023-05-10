@@ -1,8 +1,8 @@
 //
 //  GeometricShapes.swift
-//  Block2
+//  AdditionalTask
 //
-//  Created by Олександр Федоренко on 08.05.2023.
+//  Created by Олександр Федоренко on 10.05.2023.
 //
 
 import Foundation
@@ -58,4 +58,3 @@ struct Circle: GeometricFormulas {
         return 2 * π * radius
     }
 }
-

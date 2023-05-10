@@ -1,8 +1,8 @@
 //
 //  GeometricShapesEnum.swift
-//  Block2
+//  AdditionalTask
 //
-//  Created by Олександр Федоренко on 09.05.2023.
+//  Created by Олександр Федоренко on 10.05.2023.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ enum SquareEnum: GeometricFormulas {
     case small
     case medium
     case large
-    
+
     var sideLength: Double{
         switch self {
         case .small:
@@ -23,11 +23,11 @@ enum SquareEnum: GeometricFormulas {
             return 10.0
         }
     }
-    
+
     func countArea() -> Double {
         return sideLength * sideLength
     }
-    
+
     func countPerimetr() -> Double {
         return sideLength * 4
     }
@@ -38,7 +38,7 @@ enum TriangularEnum {
     case equilateral(sideLength: Double) //рівносторонній
     case isosceles(base: Double, heigth: Double) //рівнобедрений
     case scalene(sideA: Double, sideB: Double, sideC: Double) // різносторонній
-    
+
     var area: Double {
             switch self {
             case .equilateral(let sideLength):
@@ -50,7 +50,7 @@ enum TriangularEnum {
                 return sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3))
             }
         }
-        
+
         var perimeter: Double {
             switch self {
             case .equilateral(let sideLength):
