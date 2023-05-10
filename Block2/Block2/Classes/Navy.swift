@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: - TASK 1
 class Sailor{
     var name: String
