@@ -66,7 +66,6 @@
 			children = (
 				40AE71DB2A04F895003001E5 /* AppDelegate.swift */,
 				40AE71DD2A04F895003001E5 /* SceneDelegate.swift */,
-				40AE71F82A094478003001E5 /* MyGame */,
 				40AE71DF2A04F895003001E5 /* ViewController.swift */,
 				40AE71EF2A08D593003001E5 /* Classes */,
 				40AE71E12A04F895003001E5 /* Main.storyboard */,
@@ -86,13 +85,6 @@
 				40AE71F62A091EE7003001E5 /* Extensions.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		40AE71F82A094478003001E5 /* MyGame */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MyGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

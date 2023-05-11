@@ -12,12 +12,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        print(task6())
+        print("**********************************************************")
+        print(task7())
+        print("**********************************************************")
+        task8()
+        
     }
 
     func task6() -> [Int:[String]]{
-        
+
         let arr: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"]
-        let arrYears: [Int] = Array(2002...2005)
+        let arrYears: [Int] = Array(2018...2020)
 
         return arrYears.reduce(into: [:]) { partialResult, value in
             partialResult[value] = arr
@@ -46,8 +53,7 @@ class ViewController: UIViewController {
             }
             partialResult[year] = tmpArr
         }
-
-        print("")
+        print("\(calendarPro[2019]!["September"]![0])")
     }
 }
 
