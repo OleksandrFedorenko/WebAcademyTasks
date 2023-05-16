@@ -9,21 +9,20 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var topCustomView: TopCustomView!
+    @IBOutlet weak var firstMenuBlock: MenuBlock!
+    @IBOutlet weak var secondMenuBlock: MenuBlock!
+    @IBOutlet weak var thirdMenuBlock: MenuBlock!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        firstMenuBlock.blockConfiguration()
+        secondMenuBlock.blockConfiguration()
+        thirdMenuBlock.blockConfiguration()
+        topCustomView.topViewConfiguration()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

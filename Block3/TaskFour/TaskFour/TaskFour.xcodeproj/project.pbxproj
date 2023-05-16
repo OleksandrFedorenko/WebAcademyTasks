@@ -15,6 +15,10 @@
 		40E92F762A12233B00699626 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E92F752A12233B00699626 /* FirstViewController.swift */; };
 		40E92F782A12234900699626 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E92F772A12234900699626 /* SecondViewController.swift */; };
 		40E92F7A2A12235800699626 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E92F792A12235800699626 /* ThirdViewController.swift */; };
+		40E92F7D2A12742A00699626 /* TopCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E92F7C2A12742A00699626 /* TopCustomView.swift */; };
+		40E92F7F2A12746400699626 /* TopCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E92F7E2A12746400699626 /* TopCustomView.xib */; };
+		40E92F812A137EFE00699626 /* MenuBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E92F802A137EFE00699626 /* MenuBlock.swift */; };
+		40E92F832A137F1200699626 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E92F822A137F1200699626 /* MenuBlock.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		40E92F752A12233B00699626 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		40E92F772A12234900699626 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		40E92F792A12235800699626 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		40E92F7C2A12742A00699626 /* TopCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCustomView.swift; sourceTree = "<group>"; };
+		40E92F7E2A12746400699626 /* TopCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCustomView.xib; sourceTree = "<group>"; };
+		40E92F802A137EFE00699626 /* MenuBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlock.swift; sourceTree = "<group>"; };
+		40E92F822A137F1200699626 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,20 @@
 				40E92F752A12233B00699626 /* FirstViewController.swift */,
 				40E92F772A12234900699626 /* SecondViewController.swift */,
 				40E92F792A12235800699626 /* ThirdViewController.swift */,
+				40E92F7B2A1263D400699626 /* CustomViews */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		40E92F7B2A1263D400699626 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				40E92F7C2A12742A00699626 /* TopCustomView.swift */,
+				40E92F7E2A12746400699626 /* TopCustomView.xib */,
+				40E92F802A137EFE00699626 /* MenuBlock.swift */,
+				40E92F822A137F1200699626 /* MenuBlock.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +161,9 @@
 			files = (
 				40E92F6D2A12220700699626 /* LaunchScreen.storyboard in Resources */,
 				40E92F6A2A12220700699626 /* Assets.xcassets in Resources */,
+				40E92F832A137F1200699626 /* MenuBlock.xib in Resources */,
 				40E92F682A12220600699626 /* Main.storyboard in Resources */,
+				40E92F7F2A12746400699626 /* TopCustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +176,11 @@
 			files = (
 				40E92F782A12234900699626 /* SecondViewController.swift in Sources */,
 				40E92F762A12233B00699626 /* FirstViewController.swift in Sources */,
+				40E92F812A137EFE00699626 /* MenuBlock.swift in Sources */,
 				40E92F7A2A12235800699626 /* ThirdViewController.swift in Sources */,
 				40E92F612A12220600699626 /* AppDelegate.swift in Sources */,
 				40E92F632A12220600699626 /* SceneDelegate.swift in Sources */,
+				40E92F7D2A12742A00699626 /* TopCustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

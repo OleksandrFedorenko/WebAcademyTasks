@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
     func animateBall() {
         UIView.animate(withDuration: 0.5,
                        delay: 0,
-                       usingSpringWithDamping: 4.0,
+                       usingSpringWithDamping: 4,
                        initialSpringVelocity: 5,
                        options: [.autoreverse, .repeat]) {
             self.bottomBallViewConstraint.constant = -400
