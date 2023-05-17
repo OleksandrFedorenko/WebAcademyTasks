@@ -17,7 +17,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         ballViewAdjust()
     }
-    
+
     func ballViewAdjust() {
         ballView.layer.cornerRadius = 75
     }

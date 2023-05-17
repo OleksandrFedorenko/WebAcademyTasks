@@ -10,13 +10,16 @@ import UIKit
 class MenuBlock: UIView {
     
     @IBOutlet var menuView: UIView!
-    
+    @IBOutlet weak var iamgeView: UIView!
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var labelMenuBlock: UILabel!
+
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -26,9 +29,12 @@ class MenuBlock: UIView {
         Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
         menuView.fixInView(self)
     }
-    
-    func blockConfiguration() {
+
+    func blockConfiguration(text: String) {
         mainView.layer.cornerRadius = 15
-        print("blockConfiguration")
+        iamgeView.layer.cornerRadius = 25
+        iamgeView.backgroundColor = .red
+        labelMenuBlock.text = text
     }
 }
+
