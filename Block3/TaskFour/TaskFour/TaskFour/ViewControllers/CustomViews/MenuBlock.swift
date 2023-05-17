@@ -13,13 +13,13 @@ class MenuBlock: UIView {
     @IBOutlet weak var iamgeView: UIView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var labelMenuBlock: UILabel!
-
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -30,11 +30,13 @@ class MenuBlock: UIView {
         menuView.fixInView(self)
     }
 
-    func blockConfiguration(text: String) {
+    func blockConfiguration(labelText: String, imageSysName: String, color: UIColor) {
         mainView.layer.cornerRadius = 15
         iamgeView.layer.cornerRadius = 25
-        iamgeView.backgroundColor = .red
-        labelMenuBlock.text = text
+        imageView.tintColor = .white
+        iamgeView.backgroundColor = color
+        labelMenuBlock.text = labelText
+        imageView.image = UIImage(systemName: imageSysName)
     }
 }
 
