@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Bzw-0Q-4br"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Bzw-0Q-4br"/>
                     <navigationItem key="navigationItem" title="Posts" id="kBo-sg-9eo"/>
                     <connections>
                         <outlet property="tableView" destination="9Kn-03-F80" id="utx-lm-seW"/>
@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="1046" y="65"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="1f5-mT-et4">
             <objects>
                 <viewController id="41d-WF-7Tv" sceneMemberID="viewController">
@@ -37,11 +37,43 @@
                         <viewLayoutGuide key="safeArea" id="3xn-7j-7EA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XQ0-BH-3u0"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="XQ0-BH-3u0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEg-Py-Fxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1045" y="-724"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="04d-W6-eGx">
+            <objects>
+                <viewController id="WJT-kf-2aU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJn-vZ-O7u">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IeU-V0-rlE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="YKB-7u-DI5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DP1-Av-3b1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="-737"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aZP-qm-qrA">
+            <objects>
+                <viewController id="SSJ-KA-VkO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nYv-j8-ArG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YvA-7k-aZt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="Hzn-J7-aWI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wo-D8-RBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2739" y="-766"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UJW-Q7-Xm7">
@@ -51,10 +83,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="ht4-nZ-eUF" kind="relationship" relationship="viewControllers" id="vJC-y9-I1y"/>
                         <segue destination="41d-WF-7Tv" kind="relationship" relationship="viewControllers" id="aS8-Rn-P19"/>
+                        <segue destination="WJT-kf-2aU" kind="relationship" relationship="viewControllers" id="1mb-GY-EiJ"/>
+                        <segue destination="SSJ-KA-VkO" kind="relationship" relationship="viewControllers" id="KNX-Rf-o8B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfc-vR-zuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,6 +118,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-vx-iJh" userLabel="Nickname">
-                        <rect key="frame" x="41.666666666666671" y="8" width="191.66666666666663" height="13.333333333333336"/>
+                        <rect key="frame" x="41.666666666666671" y="14" width="191.66666666666663" height="13.333333333333336"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="ent-XP-owf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Jg-YV-VI2"/>
-                    <constraint firstItem="VnZ-vx-iJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3JD-BB-Ri7"/>
+                    <constraint firstItem="VnZ-vx-iJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="3JD-BB-Ri7"/>
                     <constraint firstItem="c4J-Tb-s0u" firstAttribute="top" secondItem="0Dt-g5-UJW" secondAttribute="bottom" constant="8" id="4I4-Zf-vBI"/>
                     <constraint firstAttribute="trailing" secondItem="c4J-Tb-s0u" secondAttribute="trailing" constant="8" id="6WI-76-uQj"/>
                     <constraint firstItem="GgT-DM-nuJ" firstAttribute="top" secondItem="ent-XP-owf" secondAttribute="bottom" constant="8" id="76Y-Gs-cBd"/>
