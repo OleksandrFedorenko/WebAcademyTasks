@@ -18,7 +18,12 @@ extension ViewController: UITableViewDataSource{
        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else { return UITableViewCell()}
         cell.postImage.image = UIImage(named: dataSourceArray[indexPath.row].postImageName)
         cell.avatarImage.image = UIImage(named: dataSourceArray[indexPath.row].avatarImageName)
-        
+        cell.nicknameLabel.text = dataSourceArray[indexPath.row].nickname
+        cell.postedTimeLabel.text = dataSourceArray[indexPath.row].postedAt
+        cell.descriptionLabel.text = dataSourceArray[indexPath.row].description
+        cell.commentsLabel.text = "View all \(String(dataSourceArray[indexPath.row].countOfComments)) comments"
+        cell.viewsLabel.text = "\(String(dataSourceArray[indexPath.row].viewsCount)) views"
+
         return cell
     }
 }
