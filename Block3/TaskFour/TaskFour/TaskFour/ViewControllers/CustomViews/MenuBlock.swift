@@ -7,6 +7,11 @@
 
 import UIKit
 
+
+protocol ButtonSelectionDelegate {
+    func menuElementPressed()
+}
+
 class MenuBlock: UIView {
     
     @IBOutlet var menuView: UIView!
@@ -14,6 +19,7 @@ class MenuBlock: UIView {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var labelMenuBlock: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    var delegate: ButtonSelectionDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)

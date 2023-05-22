@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController , ButtonSelectionDelegate{
 
     @IBOutlet weak var topCustomView: TopCustomView!
     @IBOutlet weak var firstMenuBlock: MenuBlock!
@@ -22,26 +22,26 @@ class ThirdViewController: UIViewController {
         secondMenuBlock.blockConfiguration(labelText: "Покупка частинами", imageSysName: "dollarsign", color: UIColor(red: 115/255, green: 96/255, blue: 171/255, alpha: 1))
         thirdMenuBlock.blockConfiguration(labelText: "Архів", imageSysName: "eurosign", color: UIColor(red: 132/255, green: 152/255, blue: 163/255, alpha: 1))
         topCustomView.topViewConfiguration()
-
-  
-        
-    }
-    func gradient() {
-        let gradientLayer = CAGradientLayer()
-        
-        gradientLayer.frame = view.bounds
-        
-        let color1 = UIColor.green.cgColor
-        let color2 = UIColor(displayP3Red: 67, green: 144, blue: 92, alpha: 1.0)
-        
-        gradientLayer.colors = [color2, color1]
-        
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        
-        greenView.layer.addSublayer(gradientLayer)
-        greenView.alpha = 1
     }
 
-
+    func menuElementPressed() {
+        print("1234")
+    }
+    
+//    func gradient() {
+//        let gradientLayer = CAGradientLayer()
+//
+//        gradientLayer.frame = view.bounds
+//
+//        let color1 = UIColor.green.cgColor
+//        let color2 = UIColor(displayP3Red: 67, green: 144, blue: 92, alpha: 1.0)
+//
+//        gradientLayer.colors = [color2, color1]
+//
+//        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+//        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+//
+//        greenView.layer.addSublayer(gradientLayer)
+//        greenView.alpha = 1
+//    }
 }

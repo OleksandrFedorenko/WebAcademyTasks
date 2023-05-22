@@ -84,14 +84,43 @@
                     <view key="view" contentMode="scaleToFill" id="0lY-Zh-Gdp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jV-6a-YHC">
+                                <rect key="frame" x="16" y="74" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLl-Me-Iwy">
+                                <rect key="frame" x="148.66666666666666" y="399" width="96" height="54"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="33"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="MVg-OA-qhO" eventType="touchUpInside" id="9rx-Zn-DpC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pz2-Jl-CJF"/>
                         <color key="backgroundColor" red="0.30980392156862746" green="0.63137254901960782" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HLl-Me-Iwy" firstAttribute="centerX" secondItem="0lY-Zh-Gdp" secondAttribute="centerX" id="9PY-wh-cH5"/>
+                            <constraint firstItem="5jV-6a-YHC" firstAttribute="leading" secondItem="pz2-Jl-CJF" secondAttribute="leading" constant="16" id="IPa-4X-woC"/>
+                            <constraint firstItem="5jV-6a-YHC" firstAttribute="height" secondItem="0lY-Zh-Gdp" secondAttribute="height" multiplier="0.115023" id="K0q-u0-PiV"/>
+                            <constraint firstItem="5jV-6a-YHC" firstAttribute="top" secondItem="pz2-Jl-CJF" secondAttribute="top" constant="15" id="PQm-dM-3O6"/>
+                            <constraint firstItem="5jV-6a-YHC" firstAttribute="width" secondItem="0lY-Zh-Gdp" secondAttribute="width" multiplier="0.239186" id="ala-IN-PFz"/>
+                            <constraint firstItem="HLl-Me-Iwy" firstAttribute="centerY" secondItem="0lY-Zh-Gdp" secondAttribute="centerY" id="rU9-bX-yUc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t8O-fo-IoS"/>
+                    <connections>
+                        <outlet property="ballView" destination="5jV-6a-YHC" id="k1e-qb-IfV"/>
+                        <outlet property="runButton" destination="HLl-Me-Iwy" id="qx2-Jx-b58"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfu-nP-qN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-850"/>
+            <point key="canvasLocation" x="1051.145038167939" y="-850"/>
         </scene>
         <!--Item-->
         <scene sceneID="Qjq-Mo-qBc">
@@ -221,6 +250,9 @@
         <image name="iconMono4" width="215" height="214"/>
         <image name="iconMono5" width="215" height="214"/>
         <image name="ukr flag" width="512" height="358"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

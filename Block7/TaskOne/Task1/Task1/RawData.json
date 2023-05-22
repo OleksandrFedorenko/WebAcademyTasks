@@ -1,0 +1,34 @@
+{
+    "count": 32,
+    "companyDescription": "company description",
+    "listOfData":[
+    {
+        "name": "Iphone",
+        "modelNumber": "PRO MAX",
+        "countries":["Ukraine", "USA", "Sweden"],
+        "price": {
+            "regions":[
+                {
+                    "name": "region price name 1",
+                    "price": 1200
+                }
+            ]
+        },
+        "year": 2042
+    },
+    {
+        "name": "Samsung",
+        "modelNumber": "A12",
+        "countries":["Ukraine", "USA", "Sweden"],
+        "price": {
+            "regions":[
+                {
+                    "name": "region price name 2",
+                    "price": 999
+                }
+            ]
+        },
+        "year": 2042
+    }
+    ]
+}
