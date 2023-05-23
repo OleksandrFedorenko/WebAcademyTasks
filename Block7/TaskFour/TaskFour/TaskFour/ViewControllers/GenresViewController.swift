@@ -13,22 +13,9 @@ class GenresViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(passedData)
         // Do any additional setup after loading the view.
     }
 
 }
 
-extension GenresViewController: UITableViewDataSource, UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return passedData.genres!.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = UITableViewCell()
-        cell.textLabel?.text = passedData.genres![indexPath.row].name
-        return cell
-    }
-}

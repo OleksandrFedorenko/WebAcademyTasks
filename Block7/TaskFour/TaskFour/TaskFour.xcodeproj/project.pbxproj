@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		4049B03B2A1CB42A00124491 /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B03A2A1CB42A00124491 /* TrendsViewController.swift */; };
 		4049B03D2A1CB43700124491 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B03C2A1CB43700124491 /* GenresViewController.swift */; };
-		4049B0422A1CB81B00124491 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B0402A1CB81B00124491 /* Genres.swift */; };
-		4049B0432A1CB81B00124491 /* GenresStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B0412A1CB81B00124491 /* GenresStruct.swift */; };
 		4049B0452A1CDFDF00124491 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B0442A1CDFDF00124491 /* APIHandler.swift */; };
+		4049B04E2A1D02BC00124491 /* GenresViewCintrollerExtenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B04D2A1D02BC00124491 /* GenresViewCintrollerExtenions.swift */; };
+		4049B0502A1D04A900124491 /* TrendsViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B04F2A1D04A800124491 /* TrendsViewControllerExtensions.swift */; };
+		4049B0592A1D24EE00124491 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B0572A1D24EE00124491 /* Results.swift */; };
+		4049B05A2A1D24EE00124491 /* TrendsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B0582A1D24EE00124491 /* TrendsStruct.swift */; };
+		4049B05D2A1D253100124491 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B05B2A1D253100124491 /* Genres.swift */; };
+		4049B05E2A1D253100124491 /* GenresStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049B05C2A1D253100124491 /* GenresStruct.swift */; };
 		40A899E92A1BFB760064AF77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A899E82A1BFB760064AF77 /* AppDelegate.swift */; };
 		40A899EB2A1BFB760064AF77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A899EA2A1BFB760064AF77 /* SceneDelegate.swift */; };
 		40A899ED2A1BFB760064AF77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A899EC2A1BFB760064AF77 /* ViewController.swift */; };
@@ -24,9 +28,13 @@
 /* Begin PBXFileReference section */
 		4049B03A2A1CB42A00124491 /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
 		4049B03C2A1CB43700124491 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
-		4049B0402A1CB81B00124491 /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Genres.swift; path = ../../../../../../../../Downloads/codegen_646c807c48182/Genres.swift; sourceTree = "<group>"; };
-		4049B0412A1CB81B00124491 /* GenresStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenresStruct.swift; path = ../../../../../../../../Downloads/codegen_646c807c48182/GenresStruct.swift; sourceTree = "<group>"; };
 		4049B0442A1CDFDF00124491 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		4049B04D2A1D02BC00124491 /* GenresViewCintrollerExtenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewCintrollerExtenions.swift; sourceTree = "<group>"; };
+		4049B04F2A1D04A800124491 /* TrendsViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewControllerExtensions.swift; sourceTree = "<group>"; };
+		4049B0572A1D24EE00124491 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Results.swift; path = ../../../../../../../../.Trash/Results.swift; sourceTree = "<group>"; };
+		4049B0582A1D24EE00124491 /* TrendsStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrendsStruct.swift; path = ../../../../../../../../.Trash/TrendsStruct.swift; sourceTree = "<group>"; };
+		4049B05B2A1D253100124491 /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Genres.swift; path = "../../../../../../../../Downloads/codegen_646ced888829b (1)/Genres.swift"; sourceTree = "<group>"; };
+		4049B05C2A1D253100124491 /* GenresStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenresStruct.swift; path = "../../../../../../../../Downloads/codegen_646ced888829b (1)/GenresStruct.swift"; sourceTree = "<group>"; };
 		40A899E52A1BFB760064AF77 /* TaskFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A899E82A1BFB760064AF77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A899EA2A1BFB760064AF77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +73,10 @@
 		4049B03F2A1CB7B500124491 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4049B0402A1CB81B00124491 /* Genres.swift */,
-				4049B0412A1CB81B00124491 /* GenresStruct.swift */,
+				4049B05B2A1D253100124491 /* Genres.swift */,
+				4049B05C2A1D253100124491 /* GenresStruct.swift */,
+				4049B0572A1D24EE00124491 /* Results.swift */,
+				4049B0582A1D24EE00124491 /* TrendsStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -77,6 +87,15 @@
 				4049B0442A1CDFDF00124491 /* APIHandler.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		4049B04C2A1D029500124491 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4049B04D2A1D02BC00124491 /* GenresViewCintrollerExtenions.swift */,
+				4049B04F2A1D04A800124491 /* TrendsViewControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		40A899DC2A1BFB760064AF77 = {
@@ -102,6 +121,7 @@
 			children = (
 				40A899E82A1BFB760064AF77 /* AppDelegate.swift */,
 				40A899EA2A1BFB760064AF77 /* SceneDelegate.swift */,
+				4049B04C2A1D029500124491 /* Extensions */,
 				4049B0462A1CE26900124491 /* Networking */,
 				4049B03F2A1CB7B500124491 /* Models */,
 				4049B03E2A1CB79C00124491 /* ViewControllers */,
@@ -247,11 +267,15 @@
 			files = (
 				4049B03D2A1CB43700124491 /* GenresViewController.swift in Sources */,
 				4049B03B2A1CB42A00124491 /* TrendsViewController.swift in Sources */,
+				4049B04E2A1D02BC00124491 /* GenresViewCintrollerExtenions.swift in Sources */,
+				4049B0502A1D04A900124491 /* TrendsViewControllerExtensions.swift in Sources */,
+				4049B05D2A1D253100124491 /* Genres.swift in Sources */,
+				4049B05E2A1D253100124491 /* GenresStruct.swift in Sources */,
 				40A899ED2A1BFB760064AF77 /* ViewController.swift in Sources */,
 				4049B0452A1CDFDF00124491 /* APIHandler.swift in Sources */,
-				4049B0422A1CB81B00124491 /* Genres.swift in Sources */,
+				4049B0592A1D24EE00124491 /* Results.swift in Sources */,
 				40A899E92A1BFB760064AF77 /* AppDelegate.swift in Sources */,
-				4049B0432A1CB81B00124491 /* GenresStruct.swift in Sources */,
+				4049B05A2A1D24EE00124491 /* TrendsStruct.swift in Sources */,
 				40A899EB2A1BFB760064AF77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

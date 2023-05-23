@@ -36,24 +36,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="q5e-Mn-uQJ">
                                 <rect key="frame" x="114.33333333333333" y="331" width="161.66666666666669" height="182"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-4M-RgX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-4M-RgX" userLabel="Trends">
                                         <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="68"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Genres">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="genresButtonPressed:" destination="K5w-rn-y5Z" eventType="touchUpInside" id="Kjg-qj-DrE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmJ-K1-EiS" userLabel="Genres">
+                                        <rect key="frame" x="0.0" y="114" width="161.66666666666666" height="68"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Trends">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="trendsButtonPressed:" destination="K5w-rn-y5Z" eventType="touchUpInside" id="XkO-Rp-K25"/>
+                                            <action selector="trendsButtonPressed:" destination="K5w-rn-y5Z" eventType="touchUpInside" id="q5P-Ut-eKG"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmJ-K1-EiS">
-                                        <rect key="frame" x="0.0" y="114" width="161.66666666666666" height="68"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Genres">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
-                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -75,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="229" y="-55"/>
         </scene>
-        <!--Trends View Controller-->
+        <!--Trends-->
         <scene sceneID="KrK-ue-5zK">
             <objects>
                 <viewController id="45D-Wm-ada" customClass="TrendsViewController" customModule="TaskFour" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,13 +104,13 @@
                             <constraint firstAttribute="trailing" secondItem="dNK-Mu-ZHH" secondAttribute="trailing" id="bcN-T5-tZZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iRA-1y-yX7"/>
+                    <navigationItem key="navigationItem" title="Trends" id="iRA-1y-yX7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PME-qR-3bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1301.5384615384614" y="401.65876777251185"/>
         </scene>
-        <!--Genres View Controller-->
+        <!--Genres-->
         <scene sceneID="MHG-2u-g4n">
             <objects>
                 <viewController id="B9a-WO-Ivc" customClass="GenresViewController" customModule="TaskFour" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +136,7 @@
                             <constraint firstItem="Sp9-eO-VR4" firstAttribute="top" secondItem="10e-pB-FkS" secondAttribute="top" id="n8Q-iX-54p"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lGN-Xp-XCq"/>
+                    <navigationItem key="navigationItem" title="Genres" id="lGN-Xp-XCq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loA-iF-VOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,33 +10,40 @@ import Alamofire
 
 class ViewController: UIViewController {
 
-    var requestResult = GenresStruct(genres: [])
+    var genresRequestResult = GenresStruct(genres: [])
+    var trendsRequestResult = TrendsStruct(page: nil, results: nil, total_pages: nil, total_results: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         APIHandler.sharedInstance.genresRequest { result in
-            self.requestResult = result
-            //print(self.requestResult)
+            self.genresRequestResult = result
         }
-        
+        APIHandler.sharedInstance.trendsRequest { result in
+            self.trendsRequestResult = result
+        }
     }
     
-    @IBAction func trendsButtonPressed(_ sender: UIButton) {
+    @IBAction func genresButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "genresSegue", sender: self)
     }
 
-    
-    
-    
-    
+    @IBAction func trendsButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "trendsSegue", sender: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "genresSegue"{
             if let destinationVC = segue.destination as? GenresViewController{
-                destinationVC.passedData = requestResult
+                destinationVC.passedData = genresRequestResult
             }else{
                 print("error")
             }
+        }else if segue.identifier == "trendsSegue"{
+            if let destinationVC = segue.destination as? TrendsViewController{
+                destinationVC.passedData = trendsRequestResult
+            }
+        }else{
+            print("incorrect segue identifire!")
         }
     }
 }
